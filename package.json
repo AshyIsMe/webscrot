@@ -1,0 +1,14 @@
+{
+  "name": "webscrot",
+  "version": "1.0.0",
+  "description": "Screenshot a url with headless chrome",
+  "main": "webscrot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.3.0"
+  }
+}
