@@ -1,10 +1,14 @@
-const puppeteer = require('puppeteer');
+#!/usr/bin/env node
 
+const puppeteer = require('puppeteer');
+const moment = require('moment');
+
+var now = moment().format('YYYY-MM-DD-HHmmss');
 var url = 'https://earth.nullschool.net';
-var outfilename = 'earthnullschool.png';
 var waitForMs = 2000;
 var width = 1920;
 var height = 1080;
+var outfilename = `${now}_${width}x${height}_webscrot.png`;
 
 (async () => {
   const browser = await puppeteer.launch();
