@@ -11,7 +11,7 @@ $ npm i .
 ## Usage
 
 ```
-Usage: webscrot.js [OPTIONS]... URL [FILE]
+Usage: webscrot [OPTIONS]... URL [FILE]
 Usage : scrot [OPTIONS]... [FILE]
   Where URL is the url to load in headless chrome for the screenshot.
   Where FILE is the target file for the screenshot.
@@ -24,7 +24,7 @@ Usage : scrot [OPTIONS]... [FILE]
   -H, --height NUM          viewport height NUM pixels high
 
   Example:
-          webscrot.js 'https://earth.nullschool.net' screenshot.png
+          webscrot 'https://earth.nullschool.net' screenshot.png
 
 This program is free software see the file COPYING for licensing info.
 Copyright Aaron Ash 2018
