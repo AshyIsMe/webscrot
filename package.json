@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Screenshot a url with headless chrome",
   "bin": "./webscrot.js",
+  "man": "./webscrot.1",
   "author": "",
   "license": "ISC",
   "dependencies": {
