@@ -35,5 +35,4 @@ Copyright Aaron Ash 2018
 * The rest of the scrot style features that make sense:
   * --exec APP
   * Special Strings for --exec and filename
-* Big boy man page
 * Put it up on AUR

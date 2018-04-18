@@ -1,0 +1,59 @@
+.TH webscrot 1 "Apr 19, 2018"
+.SH NAME
+webscrot - screenshot a webpage with headless chrome
+.SH SYNOPSIS
+webscrot [options] url [file]
+.SH DESCRIPTION
+.B webscrot
+is a screenshot capture utility for web sites using the
+.B puppeteer
+library to control headless chrome to render a site and screenshot it.
+.B webscrot
+has a few options, detailed below. Specify [file] as the filename to save
+the screenshot to.
+If [file] is not specified, a date-stamped file will be dropped in the
+current directory.
+.SH OPTIONS
+.TP 5
+.B -h, --help
+display help output and exit.
+.TP 5
+.B -v, --version
+output version information and exit.
+.TP 5
+.B -d, --delay NUM
+Wait NUM seconds before taking a shot.
+.TP 5
+.B -W, --width NUM
+Set the headless chrome viewport size to NUM pixels wide.
+.TP 5
+.B -H, --height NUM
+Set the headless chrome viewport size to NUM pixels high.
+
+.SH EXAMPLE
+webscrot 'https://earth.nullschool.net' screenshot.png
+.PP
+This would render the earth.nullschool.net site with headless chrome and
+save a screenshot of it to screenshot.png in the current directory.
+.SH BUGS
+None known.
+.SH LICENSE
+ISC License
+.PP
+Copyright (c) 2018, Aaron Ash
+.PP
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+.PP
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.PP
+Bugs and feature requests and PRs welcome at
+.br
+.B https://github.com/ashyisme/webscrot
