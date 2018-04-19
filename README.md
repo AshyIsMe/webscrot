@@ -5,7 +5,7 @@ Screenshot a webpage similar to scrot for desktop screenshots
 ## Install
 ```
 $ git clone https://github.com/ashyisme/webscrot && cd webscrot
-$ npm i .
+$ npm install --global .
 ```
 
 ## Usage
