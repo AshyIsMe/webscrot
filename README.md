@@ -15,30 +15,20 @@ Pre-requisites:
 Tested in an lxc container: lxc launch ubuntu:16.04
 
 ```
-# As root create a sudo user, and then swap to it
-adduser foobar
-usermod -aG sudo foobar
-su foobar
-
 sudo apt update && sudo apt install npm && sudo npm install -g n && sudo n latest
 
 # We need to install chromium-browser so we have all the shared libs the puppeteer build needs
 sudo apt install chromium-browser
 
 git clone https://github.com/ashyisme/webscrot && cd webscrot
-npm install .  # For some reason puppeteer only downloads the chromium build if you do a local install
-sudo npm install --global .
+# For some reason puppeteer only downloads the chromium build if you do a local install first
+npm install . && sudo npm install --global .
 cd ~
 
 webscrot https://earth.nullschool.net
 
 ```
 
-
-```
-$ git clone https://github.com/ashyisme/webscrot && cd webscrot
-$ npm install --global .
-```
 
 ## Usage
 
